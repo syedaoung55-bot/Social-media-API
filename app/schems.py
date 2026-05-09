@@ -22,7 +22,7 @@ class UserLogin(BaseModel):
 class PostBase(BaseModel):
     title: str
     content: str
-    published: bool 
+    published: bool = True
 
 class PostCreate(PostBase):
     pass
