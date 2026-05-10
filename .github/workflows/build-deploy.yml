@@ -14,5 +14,13 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
-      - name: say hi to salah
-        run: echo "Hello Salah"
+      # - name: say hi to salah
+      #   run: echo "Hello Salah"
+      - name: install python version 3.16
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.16"
+      - name: update pip
+        run: python -m pip install --upgrade pip
+      - name: install all depensdencies
+        run: pip install -r requirments.txt
