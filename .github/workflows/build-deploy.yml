@@ -36,7 +36,7 @@ jobs:
           --health_timeout 5s
           --health_retries 5
 
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
