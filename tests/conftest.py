@@ -10,8 +10,7 @@ from app import models
 from app.database import get_db, Base
 from alembic import command
 
-SQLALCHEMY_DATABASE_URL = f'postgresql://{settings.database_username}:{settings.database_password}@{settings.
-    database_hostname}:{settings.database_port}/{settings.database_name}_test'
+SQLALCHEMY_DATABASE_URL = f'postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}_test'
 # we can also hardcode our url
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 TestingSessionlocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
