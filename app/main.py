@@ -33,3 +33,5 @@ def root():
 
 # (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ;
 # (& d:\pyythonn\pp\APIS\venv\Scripts\Activate.ps1)
+
+#git remote add origin https://github.com/syedaoung55-bot/Social-media-API.git
